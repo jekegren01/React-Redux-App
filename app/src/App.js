@@ -1,13 +1,22 @@
 import React from 'react';
-import './App.css';
 import { connect } from 'react-redux';
+import SunRiseSunSet from './components/SunRiseSunSet';
 
-function App() {
+const App = (props) => {
   return (
     <div className="App">
-      
+      <header>
+        Here is my app!!!
+      </header> 
+      <SunRiseSunSet/>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return null
+};
+
+const madDispatchToProps = {};
+
+export default connect(mapStateToProps, madDispatchToProps)(App);
