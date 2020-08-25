@@ -14,6 +14,8 @@ const SunRiseSunSet = props => {
         setNewLongitude(e.target.value);
     };
 
+    // const localSunrise = 
+
     // useEffect(() => {
     //     props.submit();
     // }, [props.submit]);
@@ -26,6 +28,7 @@ const SunRiseSunSet = props => {
                 name="newLatitude"
                 value={newLatitude}
                 onChange={handleLatChanges}
+                placeholder='latitude in decimal'
             />
             <input
                 className="dec-input"
@@ -33,6 +36,7 @@ const SunRiseSunSet = props => {
                 name="newLongitude"
                 value={newLongitude}
                 onChange={handleLngChanges}
+                placeholder='longitude in decimal'
             />
             <button onClick={() => {props.submit(newLatitude,newLongitude)}}>Submit</button>
             <h2>

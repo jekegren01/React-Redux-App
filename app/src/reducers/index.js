@@ -1,6 +1,6 @@
 const initialState = {
-    lat: 'Placeholder',
-    lng: 'Placeholder',
+    lat: '',
+    lng: '',
     error: '',
     sunrise: '',
     sunset: '',
