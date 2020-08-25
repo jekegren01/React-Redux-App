@@ -14,12 +14,12 @@ const SunRiseSunSet = props => {
         setNewLongitude(e.target.value);
     };
 
-    useEffect(() => {
-
-    }, []);
+    // useEffect(() => {
+    //     props.submit();
+    // }, [props.submit]);
 
     return (
-        <div>
+        <div className="container">
             <input
                 className="dec-input"
                 type="decimal"
@@ -47,7 +47,10 @@ const SunRiseSunSet = props => {
 
 const mapStateToProps = (state) => {
     return {
-
+        lat: state.lat,
+        lng: state.lng,
+        sunrise: state.sunrise,
+        sunset: state.sunset
     }
 };
 

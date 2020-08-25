@@ -19,8 +19,8 @@ export const reducer = (state = initialState, action) => {
             return {...state, isFetching: true};
         case FETCHING_SUCCESS:
             return {...state, 
-                    sunrise: action.payload,
-                    sunset: action.payload,
+                    sunrise: action.payload.results.sunrise,
+                    sunset: action.payload.results.sunset,
                     isFetching: false
             };
         case FETCHING_FAILURE:

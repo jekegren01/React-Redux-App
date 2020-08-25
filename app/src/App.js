@@ -14,7 +14,7 @@ const App = (props) => {
 }
 
 const mapStateToProps = (state) => {
-  return null
+  return {}
 };
 
 const madDispatchToProps = {};
