@@ -6,7 +6,7 @@ const App = (props) => {
   return (
     <div className="App">
       <header>
-        Here is my app!!!
+        SUNRISE AND SUNSET TIME APP!!!
       </header> 
       <SunRiseSunSet/>
     </div>

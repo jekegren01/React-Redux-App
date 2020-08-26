@@ -13,8 +13,11 @@ const SunRiseSunSet = props => {
     const handleLngChanges = (e) => {
         setNewLongitude(e.target.value);
     };
+    
+    let utcrise = `${props.sunrise}`;
+    let localSunrise = utcrise.toString();
+    // 
 
-    // const localSunrise = 
 
     // useEffect(() => {
     //     props.submit();
@@ -40,7 +43,7 @@ const SunRiseSunSet = props => {
             />
             <button onClick={() => {props.submit(newLatitude,newLongitude)}}>Submit</button>
             <h2>
-                Sunrise: {props.sunrise}
+                Sunrise: {localSunrise}
             </h2>
             <h2> 
                 Sunset: {props.sunset}
