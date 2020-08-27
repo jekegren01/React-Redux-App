@@ -18,6 +18,10 @@ const SunRiseSunSet = props => {
     let localSunrise = utcrise.toString();
     // 
 
+    if (props.isFetching) {
+        return <h2>...loading</h2>
+    }
+
 
     // useEffect(() => {
     //     props.submit();
